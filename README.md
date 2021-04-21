@@ -108,4 +108,4 @@ surge public my-project.surge.sh
 
 ## Author
 ---
-[Aibique](https://github.com/Tonnraus)
+Con 💚 by [Aibique](https://github.com/Tonnraus) from [Platzi](https://platzi.com/clases/svelte/)
