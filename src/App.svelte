@@ -2,6 +2,10 @@
 	import About from './components/About'
 	import Text from './components/Text'
 	import Person from './components/Person'
+	import Skills from './components/Skills'
+	import Input from './components/Input'
+    import Photos from './components/Photos.svelte';
+	import ButtonCount from './components/ButtonCount'
 
 	export let name;
 	export let lastName;
@@ -15,8 +19,13 @@
 		--brand-color: #DD65DD;
 		--brand-color-bg: #1E2021;
 	}
+	:global(body.dark-mode){
+		background-color: #bfc2c7;
+		color: #1e2021;
+	}
 	:global(body){
 		background-color: var(--brand-color-bg);
+		color: #bfc2c7;
 	}
 	main {
 		text-align: center;
@@ -45,6 +54,10 @@
 	<About />
 	<Text innerText="No default"/>
 	<Text/>
+	<ButtonCount/>
 	<Person {...data} />
+	<Photos/>
+	<Skills/>
+	<Input name="Default" />
 	<p>Visit the <a class="svelte-link" href={svelteUrl}>Svelte Notion notes</a> to learn how to build Svelte apps.</p>
 </main>
