@@ -1,28 +1,26 @@
 {
-  "name": "svelte-app",
+  "name": "svelte-pugstagram",
   "version": "1.0.0",
-  "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:Aibique-tests/svelte-pugstagram.git",
+  "author": "aybike <tonn.raus09@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
-    "rollup": "^2.3.4",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.0.0"
+    "build": "webpack --mode production",
+    "start": "webpack serve --open --mode development"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "html-webpack-plugin": "^5.3.1",
+    "svelte": "^3.37.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
   },
-  "description": "*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*",
-  "main": "rollup.config.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "svelte-loader": "^3.1.1",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
